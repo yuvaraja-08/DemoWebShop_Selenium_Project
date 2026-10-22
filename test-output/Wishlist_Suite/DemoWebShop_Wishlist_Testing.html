@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  DemoWebShop_Wishlist_Testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DemoWebShop_Wishlist_Testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 21 02:07:00 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>338 seconds (338328 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistSmoke()'><b>verifyWishlistSmoke</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-08, Smoke, 1, 3, $50 Physical Gift Card, Physical, , Wishlist should open and primary product and quantity controls should be available</td>
+<td></td>
+<td>12</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistRegression()'><b>verifyWishlistRegression</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-09, Regression, 2, 4, $100 Physical Gift Card, Physical, , Existing Wishlist product should be updated successfully and remain available</td>
+<td></td>
+<td>21</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistEmailAFriend()'><b>verifyWishlistEmailAFriend</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-04, Email-A-Friend-100, 1, 4, $100 Physical Gift Card, Physical, , Email a Friend functionality should open successfully</td>
+<td></td>
+<td>16</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityUpdate()'><b>verifyWishlistQuantityUpdate</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-02, Quantity-Update-25, 2, 2, $25 Virtual Gift Card, Virtual, , Product quantity should be updated to 2 and corresponding total should be updated</td>
+<td></td>
+<td>12</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyInvalidWishlistQuantity()'><b>verifyInvalidWishlistQuantity</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-06, Invalid-Zero, 0, 1, $5 Virtual Gift Card, Virtual, 0, Zero quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>16</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityBoundary()'><b>verifyWishlistQuantityBoundary</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-07, Boundary-Outside, 0, 1, $5 Virtual Gift Card, Virtual, 0, Quantity below the minimum valid quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>16</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistToCartIntegration()'><b>verifyWishlistToCartIntegration</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-10, Wishlist-To-Cart, 1, 2, $25 Virtual Gift Card, Virtual, , Selected Wishlist product should be transferred to Shopping Cart</td>
+<td></td>
+<td>18</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityBoundary()'><b>verifyWishlistQuantityBoundary</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-07, Boundary-Min, 1, 4, $100 Physical Gift Card, Physical, 1, Minimum valid quantity should be accepted</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyCompleteWishlistWorkflow()'><b>verifyCompleteWishlistWorkflow</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-12, Complete-Workflow, 2, 1, $5 Virtual Gift Card, Virtual, , Product should be displayed, quantity should be updated, and product should be transferred to Shopping Cart successfully</td>
+<td></td>
+<td>25</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyInvalidWishlistQuantity()'><b>verifyInvalidWishlistQuantity</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-06, Invalid-Negative, -1, 2, $25 Virtual Gift Card, Virtual, -1, Negative quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>16</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistProductAddedToCart()'><b>verifyWishlistProductAddedToCart</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-03, Add-To-Cart-5, 1, 1, $5 Virtual Gift Card, Virtual, , Selected Wishlist product should be added to Shopping Cart</td>
+<td></td>
+<td>12</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistShareLink()'><b>verifyWishlistShareLink</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-05, Share-Link-50, 1, 3, $50 Physical Gift Card, Physical, , Wishlist sharing URL should be displayed</td>
+<td></td>
+<td>9</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyInvalidWishlistQuantity()'><b>verifyInvalidWishlistQuantity</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-06, Invalid-Text, abc, 3, $50 Physical Gift Card, Physical, abc, Non-numeric quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyProductDetailsInWishlist()'><b>verifyProductDetailsInWishlist</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-01, Physical-50, 1, 3, $50 Physical Gift Card, Physical, , Product name, unit price, quantity and total should be displayed</td>
+<td></td>
+<td>10</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyRemoveProductFromWishlist()'><b>verifyRemoveProductFromWishlist</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-13, Remove-Product, 1, 4, $100 Physical Gift Card, Physical, , Selected product should be removed from Wishlist</td>
+<td></td>
+<td>18</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityBoundary()'><b>verifyWishlistQuantityBoundary</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-07, Boundary-Valid, 2, 2, $25 Virtual Gift Card, Virtual, 2, Valid quantity should be accepted</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistToEmailIntegration()'><b>verifyWishlistToEmailIntegration</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-11, Wishlist-To-Email, 1, 3, $50 Physical Gift Card, Physical, , User should be navigated from Wishlist to Email a Friend functionality</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@229f66ed</td></tr>
+</table><p>
+</body>
+</html>

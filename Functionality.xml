@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Functional Testing Suite">
+  <test thread-count="5" name="Functional Test Cases">
+  
+     <groups>
+         <run>
+             <include name="Functional"/>
+         </run>
+     </groups>
+     
+    <classes>
+      <class name="Ecom.DemoWebShop.Home.HomeTestCase"/>
+      <class name="Ecom.DemoWebShop.Register.RegisterTestCase"/>
+      <class name="Ecom.DemoWebShop.Login.LoginTestCase"/>
+      <class name="Ecom.DemoWebShop.GiftCards.GiftCardsTestCase"/>
+      <class name="Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase"/>
+      <class name="Ecom.DemoWebShop.Checkout.CheckoutTestCase"/>
+      <class name="Ecom.DemoWebShop.Wishlist.WishlistTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

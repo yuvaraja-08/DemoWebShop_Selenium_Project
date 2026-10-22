@@ -1,0 +1,785 @@
+<html>
+<head>
+<title>TestNG:  Chrome_Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome_Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>141/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 21 02:13:28 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>2029 seconds (2029932 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyPasswordMismatch()'><b>verifyPasswordMismatch</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-05, PasswordMismatch-01, Male, ExcelUser, Test, unique-email, password1, password2</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@35102ed6</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyValidProductSearch()'><b>verifyValidProductSearch</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-03, Physical-100, $100 Physical Gift Card</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardIntegrationWithShoppingCart()'><b>verifyGiftCardIntegrationWithShoppingCart</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-11, Integration-01, 1, $5 Virtual Gift Card, Virtual, , , , , Selected Gift Card is successfully available in Shopping Cart</td>
+<td></td>
+<td>7</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardSorting()'><b>verifyGiftCardSorting</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-03, Sort-Name-A-Z, , , , , Name: A to Z, , , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyTermsAndCheckout()'><b>verifyTermsAndCheckout</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-08, Checkout, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>29</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyBillingBoundaryValues()'><b>verifyBillingBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@3a2ce01d</td>
+<td></td>
+<td>15</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyCompleteShoppingCartWorkflow()'><b>verifyCompleteShoppingCartWorkflow</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-15, CompleteWorkflow, $5 Virtual Gift Card, 2, , , , , , </td>
+<td></td>
+<td>26</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistToEmailIntegration()'><b>verifyWishlistToEmailIntegration</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-11, Wishlist-To-Email, 1, 3, $50 Physical Gift Card, Physical, , User should be navigated from Wishlist to Email a Friend functionality</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyShippingEstimation()'><b>verifyShippingEstimation</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-07, Shipping, $100 Physical Gift Card, 1, , , , India, , 560001</td>
+<td></td>
+<td>29</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyShoppingCartToCheckout()'><b>verifyShoppingCartToCheckout</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-14, CartToCheckout, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>25</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistProductAddedToCart()'><b>verifyWishlistProductAddedToCart</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-03, Add-To-Cart-5, 1, 1, $5 Virtual Gift Card, Virtual, , Selected Wishlist product should be added to Shopping Cart</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyShippingMethod()'><b>verifyShippingMethod</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@50352796</td>
+<td></td>
+<td>23</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyInvalidDiscountCoupon()'><b>verifyInvalidDiscountCoupon</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-05, InvalidCoupon, $5 Virtual Gift Card, 1, , INVALIDCOUPON, , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyInvalidEmailRegistration()'><b>verifyInvalidEmailRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-04, InvalidEmail-01, Male, ExcelUser, Test, invalid-email, password, password</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyProductDetailsInWishlist()'><b>verifyProductDetailsInWishlist</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-01, Physical-50, 1, 3, $50 Physical Gift Card, Physical, , Product name, unit price, quantity and total should be displayed</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardProductNavigation()'><b>verifyGiftCardProductNavigation</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-05, Product-03, 3, $50 Physical Gift Card, Physical, , , , , Selected Gift Card product details page is opened</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyInvalidWishlistQuantity()'><b>verifyInvalidWishlistQuantity</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-06, Invalid-Negative, -1, 2, $25 Virtual Gift Card, Virtual, -1, Negative quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>16</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@6b94a114</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardDisplayPerPage()'><b>verifyGiftCardDisplayPerPage</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-04, Display-8, , , , , , 8, , </td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistEmailAFriend()'><b>verifyWishlistEmailAFriend</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-04, Email-A-Friend-100, 1, 4, $100 Physical Gift Card, Physical, , Email a Friend functionality should open successfully</td>
+<td></td>
+<td>17</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistToCartIntegration()'><b>verifyWishlistToCartIntegration</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-10, Wishlist-To-Cart, 1, 2, $25 Virtual Gift Card, Virtual, , Selected Wishlist product should be transferred to Shopping Cart</td>
+<td></td>
+<td>18</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardSorting()'><b>verifyGiftCardSorting</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-03, Sort-Name-Z-A, , , , , Name: Z to A, , , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyCartTotalsAfterQuantityChange()'><b>verifyCartTotalsAfterQuantityChange</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-09, TotalsUpdate, $5 Virtual Gift Card, 2, , , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegisterSmoke()'><b>verifyRegisterSmoke</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-13, Smoke-01, Female, SmokeUser, Test, unique-email, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyBasicShoppingCartFunctionality()'><b>verifyBasicShoppingCartFunctionality</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-12, Smoke, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyBillingBoundaryValues()'><b>verifyBillingBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@5fc6442e</td>
+<td></td>
+<td>14</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyBoundarySearchInput()'><b>verifyBoundarySearchInput</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-05, Boundary-01, 5</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardViewMode()'><b>verifyGiftCardViewMode</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-02, Grid-View-01, , , , Grid, , , , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegisterPageControls()'><b>verifyRegisterPageControls</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase</td>
+<td></td>
+<td>0</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyMultipleInvalidCredentialCombinations()'><b>verifyMultipleInvalidCredentialCombinations</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-10, InvalidCombo-01, invalid-email, Wrong@123, No</td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyMultipleInvalidCredentialCombinations()'><b>verifyMultipleInvalidCredentialCombinations</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-10, InvalidCombo-03, nonexistent@gmail.com, Wrong@456, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyInvalidGiftCardProduct()'><b>verifyInvalidGiftCardProduct</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-07, Invalid-Product, 999, Invalid Gift Card, Invalid, , , , 999, Invalid Gift Card operation is handled without application failure</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyBillingBoundaryValues()'><b>verifyBillingBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@2b77bc3</td>
+<td></td>
+<td>15</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityUpdate()'><b>verifyWishlistQuantityUpdate</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-02, Quantity-Update-25, 2, 2, $25 Virtual Gift Card, Virtual, , Product quantity should be updated to 2 and corresponding total should be updated</td>
+<td></td>
+<td>12</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardDisplayPerPage()'><b>verifyGiftCardDisplayPerPage</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-04, Display-12, , , , , , 12, , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistShareLink()'><b>verifyWishlistShareLink</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-05, Share-Link-50, 1, 3, $50 Physical Gift Card, Physical, , Wishlist sharing URL should be displayed</td>
+<td></td>
+<td>9</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardSorting()'><b>verifyGiftCardSorting</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-03, Sort-Position, , , , , Position, , , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardSorting()'><b>verifyGiftCardSorting</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-03, Sort-Created-On, , , , , Created on, , , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyBlankRegistration()'><b>verifyBlankRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-03, Blank-01, Male, , , , , </td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyCompleteRegistrationWorkflow()'><b>verifyCompleteRegistrationWorkflow</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-15, CompleteWorkflow-01, Female, SystemUser, Test, unique-email, Test@123, Test@123</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyForgotPasswordNavigation()'><b>verifyForgotPasswordNavigation</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardProductsAndPrices()'><b>verifyGiftCardProductsAndPrices</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-01, Products-01, 1, $5 Virtual Gift Card, Virtual, , , , , All available Gift Card products and their prices are displayed correctly</td>
+<td></td>
+<td>0</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyHomePageCompleteProjectFlow()'><b>verifyHomePageCompleteProjectFlow</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-09, System-01, $50 Physical Gift Card</td>
+<td></td>
+<td>6</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardDisplayPerPageBoundary()'><b>verifyGiftCardDisplayPerPageBoundary</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-08, Boundary-Max, , , , , , 12, , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyLoginPageControls()'><b>verifyLoginPageControls</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase</td>
+<td></td>
+<td>0</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardViewMode()'><b>verifyGiftCardViewMode</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-02, List-View-01, , , , List, , , , </td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyValidLogin()'><b>verifyValidLogin</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-02, Valid-01, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardProductsAndPrices()'><b>verifyGiftCardProductsAndPrices</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-01, Products-04, 4, $100 Physical Gift Card, Physical, , , , , All available Gift Card products and their prices are displayed correctly</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifySearchControls()'><b>verifySearchControls</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-02, Physical-100, $100 Physical Gift Card</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.regressionValidCheckout()'><b>regressionValidCheckout</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@7bc7f594</td>
+<td></td>
+<td>17</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifySuccessfulLoginUsingDataset()'><b>verifySuccessfulLoginUsingDataset</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-09, ValidCredential-01, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyLoginSmoke()'><b>verifyLoginSmoke</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-12, Smoke-01, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardCanBeAddedToCart()'><b>verifyGiftCardCanBeAddedToCart</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-06, Product-01, 1, $5 Virtual Gift Card, Virtual, , , , , Selected Gift Card is added to Shopping Cart</td>
+<td></td>
+<td>7</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyLoginBoundaryValues()'><b>verifyLoginBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-11, Invalid-Boundary, invalid-email, x, No</td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@351577f9</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyMaleRegistration()'><b>verifyMaleRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-08, Male-Registration-01, Male, MaleUser, Test, maleuser@gmail.com, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyBoundarySearchInput()'><b>verifyBoundarySearchInput</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-05, Boundary-02, $5 Virtual Gift Card</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyInvalidEmailValidation()'><b>verifyInvalidEmailValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@581fb241</td>
+<td></td>
+<td>8</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyInvalidPasswordLogin()'><b>verifyInvalidPasswordLogin</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-04, InvalidPassword-01, 23rahul54@gmail.com, Wrong@123, No</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardProductsAndPrices()'><b>verifyGiftCardProductsAndPrices</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-01, Products-02, 2, $25 Virtual Gift Card, Virtual, , , , , All available Gift Card products and their prices are displayed correctly</td>
+<td></td>
+<td>0</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyShoppingCartRegression()'><b>verifyShoppingCartRegression</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-13, Regression, $5 Virtual Gift Card, 2, , , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifySearchControls()'><b>verifySearchControls</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-02, Virtual-5, $5 Virtual Gift Card</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyHomePageModuleNavigation()'><b>verifyHomePageModuleNavigation</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Above-Max, male, ExcelUser, Test, unique-email, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+<td></td>
+<td>6</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyCompleteWishlistWorkflow()'><b>verifyCompleteWishlistWorkflow</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-12, Complete-Workflow, 2, 1, $5 Virtual Gift Card, Virtual, , Product should be displayed, quantity should be updated, and product should be transferred to Shopping Cart successfully</td>
+<td></td>
+<td>25</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyBlankLogin()'><b>verifyBlankLogin</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-05, Blank-01, , , No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-01, CartDetails, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>26</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyRemoveProductFromWishlist()'><b>verifyRemoveProductFromWishlist</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-13, Remove-Product, 1, 4, $100 Physical Gift Card, Physical, , Selected product should be removed from Wishlist</td>
+<td></td>
+<td>19</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardProductNavigation()'><b>verifyGiftCardProductNavigation</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-05, Product-04, 4, $100 Physical Gift Card, Physical, , , , , Selected Gift Card product details page is opened</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyHomePageSmoke()'><b>verifyHomePageSmoke</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-07, Smoke-01, $5 Virtual Gift Card</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@614fb3e2</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyLoginRegression()'><b>verifyLoginRegression</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-13, Invalid, invalid-email, Wrong@123, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityBoundaryValues()'><b>verifyQuantityBoundaryValues</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-10, Boundary-Min, $5 Virtual Gift Card, 0, , , , , , </td>
+<td></td>
+<td>29</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationToLogin()'><b>verifyRegistrationToLogin</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-12, RegistrationToLogin-01, Male, IntegrationUser, Test, unique-email, Test@123, Test@123</td>
+<td></td>
+<td>15</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyValidRegistration()'><b>verifyValidRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-02, Valid-01, Male, ExcelUser, Test, unique-email, password, password</td>
+<td></td>
+<td>8</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifySavedBillingAddress()'><b>verifySavedBillingAddress</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@25e0810a</td>
+<td></td>
+<td>9</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyMultipleInvalidCredentialCombinations()'><b>verifyMultipleInvalidCredentialCombinations</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-10, InvalidCombo-02, 23rahul54@gmail.com, Wrong@123, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyInvalidEmailLogin()'><b>verifyInvalidEmailLogin</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-03, InvalidEmail-01, invalid-email, qwerty, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyInvalidWishlistQuantity()'><b>verifyInvalidWishlistQuantity</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-06, Invalid-Zero, 0, 1, $5 Virtual Gift Card, Virtual, 0, Zero quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>16</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardSorting()'><b>verifyGiftCardSorting</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-03, Sort-Price-High-Low, , , , , Price: High to Low, , , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityBoundary()'><b>verifyWishlistQuantityBoundary</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-07, Boundary-Min, 1, 4, $100 Physical Gift Card, Physical, 1, Minimum valid quantity should be accepted</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyIncompleteCredentials()'><b>verifyIncompleteCredentials</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-06, BlankPassword-01, 23rahul54@gmail.com, , No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyInvalidQuantity()'><b>verifyInvalidQuantity</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-11, InvalidQuantity, $5 Virtual Gift Card, , abc, , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@3b5480f0</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyShippingAddressAndCreate()'><b>verifyShippingAddressAndCreate</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@1e7ca061</td>
+<td></td>
+<td>12</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifySearchControls()'><b>verifySearchControls</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-02, Virtual-25, $25 Virtual Gift Card</td>
+<td></td>
+<td>0</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistRegression()'><b>verifyWishlistRegression</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-09, Regression, 2, 4, $100 Physical Gift Card, Physical, , Existing Wishlist product should be updated successfully and remain available</td>
+<td></td>
+<td>21</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyValidProductSearch()'><b>verifyValidProductSearch</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-03, Physical-50, $50 Physical Gift Card</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardSorting()'><b>verifyGiftCardSorting</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-03, Sort-Price-Low-High, , , , , Price: Low to High, , , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyFemaleRegistration()'><b>verifyFemaleRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-09, Female-Registration-01, Female, FemaleUser, Test, femaleuser@gmail.com, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Below-Min, male, ExcelUser, Test, unique-email, abc17, abc17</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@2b0d0ef</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifySavedShippingAddress()'><b>verifySavedShippingAddress</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@23f9e962</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyInvalidGiftCard()'><b>verifyInvalidGiftCard</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-06, InvalidGiftCard, $5 Virtual Gift Card, 1, , , INVALIDGIFTCARD, , , </td>
+<td></td>
+<td>29</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityCanBeUpdated()'><b>verifyQuantityCanBeUpdated</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-02, QuantityUpdate, $5 Virtual Gift Card, 2, , , , , , </td>
+<td></td>
+<td>26</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.smokeValidCheckout()'><b>smokeValidCheckout</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@3cb5aeed</td>
+<td></td>
+<td>14</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyLoginBoundaryValues()'><b>verifyLoginBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-11, Valid-Max, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyCompleteLoginWorkflow()'><b>verifyCompleteLoginWorkflow</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-15, Complete-Login-01, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyMatchingPassword()'><b>verifyMatchingPassword</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-07, MatchingPassword-01, Female, ExcelUser, Test, matchingpassword@gmail.com, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@47316eb2</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityBoundary()'><b>verifyWishlistQuantityBoundary</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-07, Boundary-Valid, 2, 2, $25 Virtual Gift Card, Virtual, 2, Valid quantity should be accepted</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyLoginBoundaryValues()'><b>verifyLoginBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-11, Valid-Min, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityBoundaryValues()'><b>verifyQuantityBoundaryValues</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-10, Boundary-Max, $5 Virtual Gift Card, 100, , , , , , </td>
+<td></td>
+<td>22</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardProductsAndPrices()'><b>verifyGiftCardProductsAndPrices</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-01, Products-03, 3, $50 Physical Gift Card, Physical, , , , , All available Gift Card products and their prices are displayed correctly</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyInvalidWishlistQuantity()'><b>verifyInvalidWishlistQuantity</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-06, Invalid-Text, abc, 3, $50 Physical Gift Card, Physical, abc, Non-numeric quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyRegisteredUserCanLogin()'><b>verifyRegisteredUserCanLogin</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-14, Registration-Login-01, unique-email, qwerty, Yes</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyLoginRegression()'><b>verifyLoginRegression</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-13, Valid, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityBoundaryValues()'><b>verifyQuantityBoundaryValues</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-10, Boundary-Invalid, $5 Virtual Gift Card, , -1, , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegisterRegression()'><b>verifyRegisterRegression</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-14, Regression-01, Male, RegressionUser, Test, unique-email, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistSmoke()'><b>verifyWishlistSmoke</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-08, Smoke, 1, 3, $50 Physical Gift Card, Physical, , Wishlist should open and primary product and quantity controls should be available</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyValidRegistration()'><b>verifyValidRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-02, Valid-02, Female, ExcelUser, Test, unique-email, password, password</td>
+<td></td>
+<td>8</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyHomePageNavigationLinks()'><b>verifyHomePageNavigationLinks</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyValidProductSearch()'><b>verifyValidProductSearch</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-03, Virtual-25, $25 Virtual Gift Card</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyBillingAddressAndCreate()'><b>verifyBillingAddressAndCreate</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@4382f913</td>
+<td></td>
+<td>27</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@2f5caaf8</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyInvalidProductSearch()'><b>verifyInvalidProductSearch</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-04, Invalid-01, NonExistingGiftCard999</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyRememberMe()'><b>verifyRememberMe</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-08, RememberMe-01, 23rahul54@gmail.com, qwerty, Yes</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.completeCheckout()'><b>completeCheckout</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@3e8fbb38</td>
+<td></td>
+<td>26</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyValidProductSearch()'><b>verifyValidProductSearch</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-03, Virtual-5, $5 Virtual Gift Card</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyCompleteGiftCardWorkflow()'><b>verifyCompleteGiftCardWorkflow</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-12, Complete-Workflow, 1, $5 Virtual Gift Card, Virtual, , , , , Complete Gift Card workflow executes successfully</td>
+<td></td>
+<td>7</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyExistingEmailRegistration()'><b>verifyExistingEmailRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-11, ExistingEmail-01, Male, ExcelUser, Test, 23rahul5gb4@gmail.com, password, password</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardProductNavigation()'><b>verifyGiftCardProductNavigation</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-05, Product-02, 2, $25 Virtual Gift Card, Virtual, , , , , Selected Gift Card product details page is opened</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Max-Valid, Female, ExcelUser, Test, unique-email, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+<td></td>
+<td>6</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyInStorePickup()'><b>verifyInStorePickup</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@720716a5</td>
+<td></td>
+<td>21</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardDisplayPerPageBoundary()'><b>verifyGiftCardDisplayPerPageBoundary</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-08, Boundary-Min, , , , , , 4, , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Min-Valid, Female, ExcelUser, Test, unique-email, abc128, abc128</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardRegressionFunctionality()'><b>verifyGiftCardRegressionFunctionality</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-10, Regression-01, 1, $5 Virtual Gift Card, Virtual, , , , , Existing Gift Cards functionality continues to work</td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardProductNavigation()'><b>verifyGiftCardProductNavigation</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-05, Product-01, 1, $5 Virtual Gift Card, Virtual, , , , , Selected Gift Card product details page is opened</td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, MinPassword-01, Male, ExcelUser, Test, unique-email, abc123, abc123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardDisplayPerPage()'><b>verifyGiftCardDisplayPerPage</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-04, Display-4, , , , , , 4, , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyInvalidInputRegistration()'><b>verifyInvalidInputRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-06, InvalidInput-01, Male, 12345, 67890, invalidinput@gmail.com, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyIncompleteCredentials()'><b>verifyIncompleteCredentials</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-06, BlankEmail-01, , qwerty, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@6f45df59</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyPaymentMethods()'><b>verifyPaymentMethods</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@26993397</td>
+<td></td>
+<td>9</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyHomePageRegression()'><b>verifyHomePageRegression</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-08, Regression-01, $25 Virtual Gift Card</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyContinueShopping()'><b>verifyContinueShopping</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-04, ContinueShopping, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>25</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyProductCanBeRemoved()'><b>verifyProductCanBeRemoved</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-03, RemoveProduct, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>29</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@63070bab</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifySearchControls()'><b>verifySearchControls</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-02, Physical-50, $50 Physical Gift Card</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@37883b97</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyBasicGiftCardFunctionality()'><b>verifyBasicGiftCardFunctionality</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-09, Smoke-01, 1, $5 Virtual Gift Card, Virtual, , , , , Gift Cards page loads and primary functionality is available</td>
+<td></td>
+<td>0</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@38e79ae3</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyCartCheckoutIntegration()'><b>verifyCartCheckoutIntegration</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@6cd846d6</td>
+<td></td>
+<td>29</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@68e5eea7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityBoundary()'><b>verifyWishlistQuantityBoundary</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-07, Boundary-Outside, 0, 1, $5 Virtual Gift Card, Virtual, 0, Quantity below the minimum valid quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>16</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@291b4bf5</td></tr>
+</table><p>
+</body>
+</html>

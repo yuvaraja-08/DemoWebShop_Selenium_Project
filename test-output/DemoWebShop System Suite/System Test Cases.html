@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>TestNG:  System Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>System Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 22 21:57:11 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>204 seconds (204297 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>System </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.completeCheckout()'><b>completeCheckout</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@5819ee0f</td>
+<td></td>
+<td>30</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyValidRegistration()'><b>verifyValidRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-02, Valid-01, Male, ExcelUser, Test, unique-email, password, password</td>
+<td></td>
+<td>9</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyCompleteWishlistWorkflow()'><b>verifyCompleteWishlistWorkflow</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-12, Complete-Workflow, 2, 1, $5 Virtual Gift Card, Virtual, , Product should be displayed, quantity should be updated, and product should be transferred to Shopping Cart successfully</td>
+<td></td>
+<td>42</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@117e949d</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyCompleteLoginWorkflow()'><b>verifyCompleteLoginWorkflow</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-15, Complete-Login-01, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyValidLogin()'><b>verifyValidLogin</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-02, Valid-01, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyCompleteGiftCardWorkflow()'><b>verifyCompleteGiftCardWorkflow</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-12, Complete-Workflow, 1, $5 Virtual Gift Card, Virtual, , , , , Complete Gift Card workflow executes successfully</td>
+<td></td>
+<td>7</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@31f9b85e</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyCompleteRegistrationWorkflow()'><b>verifyCompleteRegistrationWorkflow</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-15, CompleteWorkflow-01, Female, SystemUser, Test, unique-email, Test@123, Test@123</td>
+<td></td>
+<td>15</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyCompleteShoppingCartWorkflow()'><b>verifyCompleteShoppingCartWorkflow</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-15, CompleteWorkflow, $5 Virtual Gift Card, 2, , , , , , </td>
+<td></td>
+<td>23</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@424e1977</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyHomePageCompleteProjectFlow()'><b>verifyHomePageCompleteProjectFlow</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-09, System-01, $50 Physical Gift Card</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyValidRegistration()'><b>verifyValidRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-02, Valid-02, Female, ExcelUser, Test, unique-email, password, password</td>
+<td></td>
+<td>7</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>TestNG:  Negative Test Cases</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Negative Test Cases</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Oct 20 14:45:22 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>427 seconds (427909 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Negative </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@fffdd40</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyPasswordMismatch()'><b>verifyPasswordMismatch</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-05, PasswordMismatch-01, Male, ExcelUser, Test, unique-email, password1, password2</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyInvalidEmailRegistration()'><b>verifyInvalidEmailRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-04, InvalidEmail-01, Male, ExcelUser, Test, invalid-email, password, password</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyInvalidGiftCardProduct()'><b>verifyInvalidGiftCardProduct</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-07, Invalid-Product, 999, Invalid Gift Card, Invalid, , , , 999, Invalid Gift Card operation is handled without application failure</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@31f9b85e</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyInvalidWishlistQuantity()'><b>verifyInvalidWishlistQuantity</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-06, Invalid-Negative, -1, 2, $25 Virtual Gift Card, Virtual, -1, Negative quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>17</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@117e949d</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyInvalidProductSearch()'><b>verifyInvalidProductSearch</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-04, Invalid-01, NonExistingGiftCard999</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyInvalidPasswordLogin()'><b>verifyInvalidPasswordLogin</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-04, InvalidPassword-01, 23rahul54@gmail.com, Wrong@123, No</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@2e5f860b</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyIncompleteCredentials()'><b>verifyIncompleteCredentials</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-06, BlankPassword-01, 23rahul54@gmail.com, , No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@42ca6733</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyBlankLogin()'><b>verifyBlankLogin</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-05, Blank-01, , , No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyMultipleInvalidCredentialCombinations()'><b>verifyMultipleInvalidCredentialCombinations</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-10, InvalidCombo-02, 23rahul54@gmail.com, Wrong@123, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@452d71e5</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@34c9b1dd</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@66741691</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyMultipleInvalidCredentialCombinations()'><b>verifyMultipleInvalidCredentialCombinations</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-10, InvalidCombo-03, nonexistent@gmail.com, Wrong@456, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyInvalidWishlistQuantity()'><b>verifyInvalidWishlistQuantity</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-06, Invalid-Zero, 0, 1, $5 Virtual Gift Card, Virtual, 0, Zero quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>17</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@117e949d</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyInvalidWishlistQuantity()'><b>verifyInvalidWishlistQuantity</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-06, Invalid-Text, abc, 3, $50 Physical Gift Card, Physical, abc, Non-numeric quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@117e949d</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@77961693</td>
+<td></td>
+<td>26</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyInvalidEmailValidation()'><b>verifyInvalidEmailValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@591ae3dd</td>
+<td></td>
+<td>8</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyBlankRegistration()'><b>verifyBlankRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-03, Blank-01, Male, , , , , </td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyExistingEmailRegistration()'><b>verifyExistingEmailRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-11, ExistingEmail-01, Male, ExcelUser, Test, 23rahul5gb4@gmail.com, password, password</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyMultipleInvalidCredentialCombinations()'><b>verifyMultipleInvalidCredentialCombinations</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-10, InvalidCombo-01, invalid-email, Wrong@123, No</td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyInvalidDiscountCoupon()'><b>verifyInvalidDiscountCoupon</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-05, InvalidCoupon, $5 Virtual Gift Card, 1, , INVALIDCOUPON, , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@424e1977</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyInvalidGiftCard()'><b>verifyInvalidGiftCard</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-06, InvalidGiftCard, $5 Virtual Gift Card, 1, , , INVALIDGIFTCARD, , , </td>
+<td></td>
+<td>26</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@424e1977</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyInvalidQuantity()'><b>verifyInvalidQuantity</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-11, InvalidQuantity, $5 Virtual Gift Card, , abc, , , , , </td>
+<td></td>
+<td>25</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@424e1977</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyIncompleteCredentials()'><b>verifyIncompleteCredentials</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-06, BlankEmail-01, , qwerty, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyInvalidEmailLogin()'><b>verifyInvalidEmailLogin</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-03, InvalidEmail-01, invalid-email, qwerty, No</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyMandatoryBillingValidation()'><b>verifyMandatoryBillingValidation</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@20a4f67a</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+</table><p>
+</body>
+</html>

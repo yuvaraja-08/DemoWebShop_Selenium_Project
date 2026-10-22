@@ -1,0 +1,185 @@
+<html>
+<head>
+<title>TestNG:  DemoWebShop_BVA_Testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DemoWebShop_BVA_Testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 21 00:29:39 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>342 seconds (342369 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>BVA </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Max-Valid, Female, ExcelUser, Test, unique-email, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+<td></td>
+<td>6</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyBillingBoundaryValues()'><b>verifyBillingBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@80081d7</td>
+<td></td>
+<td>29</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Above-Max, male, ExcelUser, Test, unique-email, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+<td></td>
+<td>6</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyLoginBoundaryValues()'><b>verifyLoginBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-11, Valid-Min, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyBoundarySearchInput()'><b>verifyBoundarySearchInput</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-05, Boundary-02, $5 Virtual Gift Card</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyLoginBoundaryValues()'><b>verifyLoginBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-11, Invalid-Boundary, invalid-email, x, No</td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityBoundaryValues()'><b>verifyQuantityBoundaryValues</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-10, Boundary-Min, $5 Virtual Gift Card, 0, , , , , , </td>
+<td></td>
+<td>30</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@424e1977</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Below-Min, male, ExcelUser, Test, unique-email, abc17, abc17</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityBoundary()'><b>verifyWishlistQuantityBoundary</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-07, Boundary-Outside, 0, 1, $5 Virtual Gift Card, Virtual, 0, Quantity below the minimum valid quantity should be rejected or handled according to application behavior</td>
+<td></td>
+<td>16</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@117e949d</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardDisplayPerPageBoundary()'><b>verifyGiftCardDisplayPerPageBoundary</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-08, Boundary-Max, , , , , , 12, , </td>
+<td></td>
+<td>2</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@31f9b85e</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.GiftCards.GiftCardsTestCase.verifyGiftCardDisplayPerPageBoundary()'><b>verifyGiftCardDisplayPerPageBoundary</b><br>Test class: Ecom.DemoWebShop.GiftCards.GiftCardsTestCase<br>Parameters: TC-GC-08, Boundary-Min, , , , , , 4, , </td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.GiftCards.GiftCardsTestCase@31f9b85e</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityBoundaryValues()'><b>verifyQuantityBoundaryValues</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-10, Boundary-Max, $5 Virtual Gift Card, 100, , , , , , </td>
+<td></td>
+<td>22</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@424e1977</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, MinPassword-01, Male, ExcelUser, Test, unique-email, abc123, abc123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityBoundaryValues()'><b>verifyQuantityBoundaryValues</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-10, Boundary-Invalid, $5 Virtual Gift Card, , -1, , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@424e1977</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Login.LoginTestCase.verifyLoginBoundaryValues()'><b>verifyLoginBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Login.LoginTestCase<br>Parameters: TC-LOGIN-11, Valid-Max, 23rahul54@gmail.com, qwerty, No</td>
+<td></td>
+<td>4</td>
+<td>Ecom.DemoWebShop.Login.LoginTestCase@762ef0ea</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyBillingBoundaryValues()'><b>verifyBillingBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@57d0c779</td>
+<td></td>
+<td>15</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityBoundary()'><b>verifyWishlistQuantityBoundary</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-07, Boundary-Valid, 2, 2, $25 Virtual Gift Card, Virtual, 2, Valid quantity should be accepted</td>
+<td></td>
+<td>11</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@117e949d</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Checkout.CheckoutTestCase.verifyBillingBoundaryValues()'><b>verifyBillingBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Checkout.CheckoutTestCase<br>Parameters: [Ljava.lang.Object;@3070f59f</td>
+<td></td>
+<td>14</td>
+<td>Ecom.DemoWebShop.Checkout.CheckoutTestCase@10d68fcd</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Home.HomeTestCase.verifyBoundarySearchInput()'><b>verifyBoundarySearchInput</b><br>Test class: Ecom.DemoWebShop.Home.HomeTestCase<br>Parameters: TC-HOME-05, Boundary-01, 5</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Home.HomeTestCase@58ea606c</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Min-Valid, Female, ExcelUser, Test, unique-email, abc128, abc128</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@2d2ffcb7</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Wishlist.WishlistTestCase.verifyWishlistQuantityBoundary()'><b>verifyWishlistQuantityBoundary</b><br>Test class: Ecom.DemoWebShop.Wishlist.WishlistTestCase<br>Parameters: TC-WISH-07, Boundary-Min, 1, 4, $100 Physical Gift Card, Physical, 1, Minimum valid quantity should be accepted</td>
+<td></td>
+<td>12</td>
+<td>Ecom.DemoWebShop.Wishlist.WishlistTestCase@117e949d</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>TestNG:  DemoWebShop_Register_Testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DemoWebShop_Register_Testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 21 01:53:11 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>230 seconds (230003 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyExistingEmailRegistration()'><b>verifyExistingEmailRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-11, ExistingEmail-01, Male, ExcelUser, Test, 23rahul5gb4@gmail.com, password, password</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Min-Valid, Female, ExcelUser, Test, unique-email, abc128, abc128</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, MinPassword-01, Male, ExcelUser, Test, unique-email, abc123, abc123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyBlankRegistration()'><b>verifyBlankRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-03, Blank-01, Male, , , , , </td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyMaleRegistration()'><b>verifyMaleRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-08, Male-Registration-01, Male, MaleUser, Test, maleuser@gmail.com, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyInvalidEmailRegistration()'><b>verifyInvalidEmailRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-04, InvalidEmail-01, Male, ExcelUser, Test, invalid-email, password, password</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyCompleteRegistrationWorkflow()'><b>verifyCompleteRegistrationWorkflow</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-15, CompleteWorkflow-01, Female, SystemUser, Test, unique-email, Test@123, Test@123</td>
+<td></td>
+<td>13</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyValidRegistration()'><b>verifyValidRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-02, Valid-01, Male, ExcelUser, Test, unique-email, password, password</td>
+<td></td>
+<td>8</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyPasswordMismatch()'><b>verifyPasswordMismatch</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-05, PasswordMismatch-01, Male, ExcelUser, Test, unique-email, password1, password2</td>
+<td></td>
+<td>1</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationToLogin()'><b>verifyRegistrationToLogin</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-12, RegistrationToLogin-01, Male, IntegrationUser, Test, unique-email, Test@123, Test@123</td>
+<td></td>
+<td>15</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegisterRegression()'><b>verifyRegisterRegression</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-14, Regression-01, Male, RegressionUser, Test, unique-email, Test@123, Test@123</td>
+<td></td>
+<td>7</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Max-Valid, Female, ExcelUser, Test, unique-email, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+<td></td>
+<td>6</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Below-Min, male, ExcelUser, Test, unique-email, abc17, abc17</td>
+<td></td>
+<td>3</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegistrationBoundaryValues()'><b>verifyRegistrationBoundaryValues</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-10, Above-Max, male, ExcelUser, Test, unique-email, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa, aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+<td></td>
+<td>6</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyValidRegistration()'><b>verifyValidRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-02, Valid-02, Female, ExcelUser, Test, unique-email, password, password</td>
+<td></td>
+<td>8</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegisterPageControls()'><b>verifyRegisterPageControls</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase</td>
+<td></td>
+<td>0</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyFemaleRegistration()'><b>verifyFemaleRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-09, Female-Registration-01, Female, FemaleUser, Test, femaleuser@gmail.com, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyRegisterSmoke()'><b>verifyRegisterSmoke</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-13, Smoke-01, Female, SmokeUser, Test, unique-email, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyInvalidInputRegistration()'><b>verifyInvalidInputRegistration</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-06, InvalidInput-01, Male, 12345, 67890, invalidinput@gmail.com, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.Register.RegisterTestCase.verifyMatchingPassword()'><b>verifyMatchingPassword</b><br>Test class: Ecom.DemoWebShop.Register.RegisterTestCase<br>Parameters: TC-REG-07, MatchingPassword-01, Female, ExcelUser, Test, matchingpassword@gmail.com, Test@123, Test@123</td>
+<td></td>
+<td>5</td>
+<td>Ecom.DemoWebShop.Register.RegisterTestCase@6743e411</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<html>
+<head>
+<title>TestNG:  DemoWebShop_ShoppingCart_Testing</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DemoWebShop_ShoppingCart_Testing</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Oct 21 01:57:53 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>526 seconds (526005 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyInvalidDiscountCoupon()'><b>verifyInvalidDiscountCoupon</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-05, InvalidCoupon, $5 Virtual Gift Card, 1, , INVALIDCOUPON, , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyCartTotalsAfterQuantityChange()'><b>verifyCartTotalsAfterQuantityChange</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-09, TotalsUpdate, $5 Virtual Gift Card, 2, , , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyInvalidQuantity()'><b>verifyInvalidQuantity</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-11, InvalidQuantity, $5 Virtual Gift Card, , abc, , , , , </td>
+<td></td>
+<td>25</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyProductDetails()'><b>verifyProductDetails</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-01, CartDetails, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyBasicShoppingCartFunctionality()'><b>verifyBasicShoppingCartFunctionality</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-12, Smoke, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>23</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityCanBeUpdated()'><b>verifyQuantityCanBeUpdated</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-02, QuantityUpdate, $5 Virtual Gift Card, 2, , , , , , </td>
+<td></td>
+<td>25</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyShoppingCartToCheckout()'><b>verifyShoppingCartToCheckout</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-14, CartToCheckout, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>26</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyProductCanBeRemoved()'><b>verifyProductCanBeRemoved</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-03, RemoveProduct, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>29</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityBoundaryValues()'><b>verifyQuantityBoundaryValues</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-10, Boundary-Min, $5 Virtual Gift Card, 0, , , , , , </td>
+<td></td>
+<td>28</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyContinueShopping()'><b>verifyContinueShopping</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-04, ContinueShopping, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyCompleteShoppingCartWorkflow()'><b>verifyCompleteShoppingCartWorkflow</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-15, CompleteWorkflow, $5 Virtual Gift Card, 2, , , , , , </td>
+<td></td>
+<td>25</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityBoundaryValues()'><b>verifyQuantityBoundaryValues</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-10, Boundary-Invalid, $5 Virtual Gift Card, , -1, , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyShoppingCartRegression()'><b>verifyShoppingCartRegression</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-13, Regression, $5 Virtual Gift Card, 2, , , , , , </td>
+<td></td>
+<td>24</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyShippingEstimation()'><b>verifyShippingEstimation</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-07, Shipping, $100 Physical Gift Card, 1, , , , India, , 560001</td>
+<td></td>
+<td>29</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyTermsAndCheckout()'><b>verifyTermsAndCheckout</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-08, Checkout, $5 Virtual Gift Card, 1, , , , , , </td>
+<td></td>
+<td>29</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyInvalidGiftCard()'><b>verifyInvalidGiftCard</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-06, InvalidGiftCard, $5 Virtual Gift Card, 1, , , INVALIDGIFTCARD, , , </td>
+<td></td>
+<td>27</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+<tr>
+<td title='Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase.verifyQuantityBoundaryValues()'><b>verifyQuantityBoundaryValues</b><br>Test class: Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase<br>Parameters: TC-CART-10, Boundary-Max, $5 Virtual Gift Card, 100, , , , , , </td>
+<td></td>
+<td>22</td>
+<td>Ecom.DemoWebShop.ShoppingCart.ShoppingCartTestCase@477b4cdf</td></tr>
+</table><p>
+</body>
+</html>

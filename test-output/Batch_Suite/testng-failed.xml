@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Batch_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DemoWebShop_Batch_Testing(failed)">
+    <classes>
+      <class name="Ecom.DemoWebShop.Checkout.CheckoutTestCase">
+        <methods>
+          <include name="completeCheckout" invocation-numbers="0"/>
+          <include name="navigateToApp"/>
+          <include name="smokeValidCheckout" invocation-numbers="0"/>
+          <include name="verifyBillingBoundaryValues" invocation-numbers="0 1 2"/>
+          <include name="verifySavedBillingAddress" invocation-numbers="0"/>
+          <include name="bt"/>
+          <include name="verifyShippingAddressAndCreate" invocation-numbers="0"/>
+          <include name="verifyBillingAddressAndCreate" invocation-numbers="0"/>
+          <include name="verifyInStorePickup" invocation-numbers="0"/>
+          <include name="verifyCartCheckoutIntegration" invocation-numbers="0"/>
+          <include name="verifyPaymentMethods" invocation-numbers="0"/>
+          <include name="verifyMandatoryBillingValidation" invocation-numbers="0 1 2 3 4 5 6 7"/>
+          <include name="regressionValidCheckout" invocation-numbers="0"/>
+          <include name="dbConnection"/>
+          <include name="verifySavedShippingAddress" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="verifyInvalidEmailValidation" invocation-numbers="0"/>
+          <include name="verifyShippingMethod" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Ecom.DemoWebShop.Checkout.CheckoutTestCase -->
+    </classes>
+  </test> <!-- DemoWebShop_Batch_Testing(failed) -->
+</suite> <!-- Failed suite [Batch_Suite] -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Home_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="DemoWebShop_Home_Testing(failed)">
+    <classes>
+      <class name="Ecom.DemoWebShop.Home.HomeTestCase">
+        <methods>
+          <include name="navigateToApp"/>
+          <include name="bt"/>
+          <include name="closeBrowser"/>
+          <include name="verifyBoundarySearchInput" invocation-numbers="0"/>
+          <include name="dbConnection"/>
+        </methods>
+      </class> <!-- Ecom.DemoWebShop.Home.HomeTestCase -->
+    </classes>
+  </test> <!-- DemoWebShop_Home_Testing(failed) -->
+</suite> <!-- Failed suite [Home_Suite] -->
